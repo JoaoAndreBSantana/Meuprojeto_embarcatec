@@ -1,15 +1,24 @@
-Controle de LED com Botão - Desafio EmbarcaTech
+Controle de LED com Botão
+Descrição
+Este projeto permite o controle de um LED embutido, onde o usuário pode ajustar a velocidade de piscar do LED por meio de um botão. A velocidade do LED pode ser alterada entre 1 e 5 ciclos por segundo, e ao atingir a velocidade máxima, o LED é desligado. O sistema funciona por meio de interações com pinos GPIO, e o código foi desenvolvido para ser simples e eficiente.
 
-DESCRIÇÃO
-Este projeto foi desenvolvido para o Desafio EmbarcaTech e tem como objetivo demonstrar o uso da placa BitDogLab com C/C++. O sistema controla o LED embutido da placa de acordo com a interação do usuário via um botão. O LED inicia desligado e, a cada pressionamento do botão, sua velocidade de piscar aumenta até um limite de 5 níveis. Quando o botão é pressionado novamente após atingir o limite, o LED se apaga e o ciclo recomeça.
+Funcionalidades
+Controle de Piscar do LED: O LED alterna entre aceso e apagado com diferentes velocidades de piscamento.
+Ajuste de Velocidade: O botão permite ao usuário aumentar a velocidade de piscamento do LED, variando entre 1 e 5 ciclos por segundo. Após atingir a velocidade 5, o LED é desligado.
+Interação com GPIO: O botão está conectado ao pino GPIO 5, e o controle do LED é feito através de simples verificações de estado do botão.
+Componentes
+LED embutido.
+Botão de controle (conectado ao pino GPIO 5 com resistência de pull-up).
+Como Usar
+Instalar Dependências
 
-COMPONENTES UTILIZADOS
-O projeto utiliza dois componentes principais da placa BitDogLab: o LED embutido e um botão conectado ao GPIO 5. O botão é responsável por alterar a velocidade do LED, proporcionando uma interação dinâmica com o usuário.
+Configure o ambiente de desenvolvimento adequado para compilar o código.
+Compilação e Upload
 
-FUNCIONAMENTO
-Ao iniciar o sistema, o LED permanece apagado. Quando o usuário pressiona o botão pela primeira vez, o LED começa a piscar em uma velocidade mínima. Com cada nova pressão, a frequência do piscar aumenta até atingir o nível máximo de 5. Caso o botão seja pressionado novamente nesse nível, o LED se apaga e o ciclo reinicia. Esse comportamento garante um controle intuitivo e simples do LED.
+Clone este repositório e use uma ferramenta como CMake para compilar e enviar o código para o dispositivo.
+Operação
 
-DEMONSTRAÇÃO
-Assista ao vídeo demonstrativo do funcionamento do projeto no YouTube:
-https://youtu.be/1QQnNn3ivSY?si=0h674tzB8_vtFaoJ
-
+O LED inicia desligado.
+Pressione o botão para começar o piscar do LED com uma velocidade de 1 ciclo por segundo.
+A cada pressionamento do botão, a velocidade de piscamento aumenta.
+Quando a velocidade atinge o valor 5, o LED é desligado.
