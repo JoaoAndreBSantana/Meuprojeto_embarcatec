@@ -1,9 +1,10 @@
 # CONTROLE DE LED COM BOTÃO 🎮💡
 
 ## Descrição 📜
-- Controle simples de LED utilizando um botão.
-- O LED começa desligado e alterna entre diferentes velocidades de piscar.
-- Cada pressionamento do botão aumenta a velocidade até que o LED se desligue.
+O sistema controla o LED embutido da placa de acordo com a interação do usuário
+via um botão. O LED inicia desligado e, a cada pressionamento do botão, sua
+velocidade de piscar aumenta até um limite de 5 níveis. Quando o botão é
+pressionado novamente após atingir o limite, o LED se apaga e o ciclo recomeça.
 
 ## Funcionalidades ⚙️
 - Controle do LED para alternar entre estados ligados e desligados.
@@ -13,12 +14,7 @@
 ## Componentes 🔧
 - LED
 - Botão A
-
-## Como Funciona 🔍
-- O LED começa desligado.
-- A cada pressionamento do botão, a velocidade do piscar do LED aumenta.
-- Quando a velocidade atinge o limite, o LED desliga.
-
+  
 ## Como Usar 📝
 1. Inicie o sistema.
 2. Pressione o botão para controlar a velocidade do LED.
